@@ -167,9 +167,6 @@ tiles = {
 })
 
 
-
-
-
 minetest.register_decoration({
     deco_type = "simple",
     place_on = {"default:stone"},
@@ -261,7 +258,7 @@ minetest.register_decoration({
     sidelen = 16,
     place_offset_y = -1,
     fill_ratio = 8,
-    biomes = {"snowy_grassland", "icesheet_ocean", "icesheet_under", "icesheet", "snowy_grassland_ocean", "snowy_grassland_under", "tundra_highland", "tundra_beach", "tundra_ocean", "tundra_under", "taiga", "taiga_under", "livingfloatlands:coldsteppe"},
+    biomes = {"snowy_grassland", "icesheet_under", "icesheet", "snowy_grassland_under", "tundra_highland", "tundra_beach", "tundra_under", "taiga", "taiga_under", "livingfloatlands:coldsteppe"},
     flags = "force_placement,all_floors",
     y_max = -1,
     y_min = -30,
@@ -276,7 +273,7 @@ minetest.register_decoration({
     sidelen = 16,
     place_offset_y = -1,
     fill_ratio = 8,
-    biomes = {"snowy_grassland", "icesheet_ocean", "icesheet_under", "icesheet", "snowy_grassland_ocean", "snowy_grassland_under", "tundra_highland", "tundra_beach", "tundra_ocean", "tundra_under", "taiga", "taiga_under", "livingfloatlands:coldsteppe"},
+    biomes = {"snowy_grassland", "icesheet_under", "icesheet", "snowy_grassland_under", "tundra_highland", "tundra_beach", "tundra_under", "taiga", "taiga_under", "livingfloatlands:coldsteppe"},
     flags = "force_placement,all_ceilings",
     y_max = -1,
     y_min = -30,
@@ -313,4 +310,6 @@ minetest.register_decoration({
     decoration = "livingcaves:rootdirt2"
 
 })
+
+
 

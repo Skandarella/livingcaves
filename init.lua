@@ -33,6 +33,9 @@ local S = minetest.get_translator and minetest.get_translator("livingcaves") or
 -- plants
 dofile(path .. "cavenodes.lua") -- 
 dofile(path .. "decor.lua") -- 
+dofile(path .. "water.lua") -- 
+dofile(path .. "crafting.lua") -- 
+dofile(path .. "dye.lua") -- 
 dofile(path .. "hunger.lua") -- 
 
 

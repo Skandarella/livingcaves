@@ -1909,3 +1909,4 @@ noise_params = {
     schematic = minetest.get_modpath("livingcaves").."/schematics/livingcaves_icestalagmitegroup2.mts",
 	rotation = "random",
 })
+
