@@ -2,6 +2,128 @@ local modname = "livingcaves"
 local modpath = minetest.get_modpath(modname)
 local mg_name = minetest.get_mapgen_setting("mg_name")
 
+--- stone cave
+
+minetest.register_decoration({
+    deco_type = "schematic",
+    place_on = {"default:stone"},
+    sidelen = 16,
+noise_params = {
+			scale = 0.01,
+			spread = {x = 40, y = 40, z = 40},
+			seed = 1053,
+			octaves = 6,
+			persist = 1,
+		},
+    flags = "place_center_x,place_center_z,all_ceilings",
+    place_offset_y = -1,
+    biomes = {"coniferous_forest_under", "coniferous_forest", "deciduous_forest_under", "deciduous_forest", "savanna", "savanna_under", "sandstone_desert_under", "rainforest", "rainforest_under", "rainforest_swamp", "rainforest_under", "naturalbiomes:alpine", "naturalbiomes:mediterranean", "naturalbiomes:wetsavanna", "livingjungle:jungle", "livingfloatlands:coldgiantforest", "livingfloatlands:giantforest", "livingfloatlands:paleojungle"},
+    y_max = -5,
+    y_min = -25,
+    schematic = minetest.get_modpath("livingcaves").."/schematics/livingcaves_spiderweb.mts",
+	rotation = "random",
+})
+
+minetest.register_decoration({
+    deco_type = "schematic",
+    place_on = {"default:stone"},
+    sidelen = 16,
+noise_params = {
+			scale = 0.01,
+			spread = {x = 40, y = 40, z = 40},
+			seed = 1053,
+			octaves = 6,
+			persist = 1,
+		},
+    flags = "place_center_x,place_center_z,all_ceilings",
+    place_offset_y = -1,
+    biomes = {"coniferous_forest_under", "coniferous_forest", "deciduous_forest_under", "deciduous_forest", "savanna", "savanna_under", "sandstone_desert_under", "rainforest", "rainforest_under", "rainforest_swamp", "rainforest_under", "naturalbiomes:alpine", "naturalbiomes:mediterranean", "naturalbiomes:wetsavanna", "livingjungle:jungle", "livingfloatlands:coldgiantforest", "livingfloatlands:giantforest", "livingfloatlands:paleojungle"},
+    y_max = -5,
+    y_min = -25,
+    schematic = minetest.get_modpath("livingcaves").."/schematics/livingcaves_spiderweb2.mts",
+	rotation = "random",
+})
+
+minetest.register_decoration({
+    deco_type = "schematic",
+    place_on = {"default:stone"},
+    sidelen = 16,
+noise_params = {
+			scale = 0.01,
+			spread = {x = 40, y = 40, z = 40},
+			seed = 1053,
+			octaves = 6,
+			persist = 1,
+		},
+    flags = "place_center_x,place_center_z,all_floors",
+    place_offset_y = -1,
+    biomes = {"coniferous_forest_under", "coniferous_forest", "deciduous_forest_under", "deciduous_forest", "savanna", "savanna_under", "sandstone_desert_under", "rainforest", "rainforest_under", "rainforest_swamp", "rainforest_under", "naturalbiomes:alpine", "naturalbiomes:mediterranean", "naturalbiomes:wetsavanna", "livingjungle:jungle", "livingfloatlands:coldgiantforest", "livingfloatlands:giantforest", "livingfloatlands:paleojungle"},
+    y_max = -5,
+    y_min = -25,
+    schematic = minetest.get_modpath("livingcaves").."/schematics/livingcaves_spiderweb3.mts",
+	rotation = "random",
+})
+
+minetest.register_decoration({
+    deco_type = "schematic",
+    place_on = {"default:stone"},
+    sidelen = 16,
+noise_params = {
+			scale = 0.01,
+			spread = {x = 40, y = 40, z = 40},
+			seed = 1053,
+			octaves = 6,
+			persist = 1,
+		},
+    flags = "place_center_x,place_center_z,all_floors",
+    place_offset_y = -1,
+    biomes = {"coniferous_forest_under", "coniferous_forest", "deciduous_forest_under", "deciduous_forest", "savanna", "savanna_under", "sandstone_desert_under", "rainforest", "rainforest_under", "rainforest_swamp", "rainforest_under", "naturalbiomes:alpine", "naturalbiomes:mediterranean", "naturalbiomes:wetsavanna", "livingjungle:jungle", "livingfloatlands:coldgiantforest", "livingfloatlands:giantforest", "livingfloatlands:paleojungle"},
+    y_max = -5,
+    y_min = -25,
+    schematic = minetest.get_modpath("livingcaves").."/schematics/livingcaves_spiderweb4.mts",
+	rotation = "random",
+})
+
+minetest.register_decoration({
+    deco_type = "schematic",
+    place_on = {"default:stone"},
+    sidelen = 16,
+noise_params = {
+			scale = 0.01,
+			spread = {x = 40, y = 40, z = 40},
+			seed = 1053,
+			octaves = 6,
+			persist = 1,
+		},
+    flags = "place_center_x,place_center_z,all_floors",
+    place_offset_y = -1,
+    biomes = {"coniferous_forest_under", "coniferous_forest", "deciduous_forest_under", "deciduous_forest", "savanna", "savanna_under", "sandstone_desert_under", "rainforest", "rainforest_under", "rainforest_swamp", "rainforest_under", "naturalbiomes:alpine", "naturalbiomes:mediterranean", "naturalbiomes:wetsavanna", "livingjungle:jungle", "livingfloatlands:coldgiantforest", "livingfloatlands:giantforest", "livingfloatlands:paleojungle"},
+    y_max = -5,
+    y_min = -25,
+    schematic = minetest.get_modpath("livingcaves").."/schematics/livingcaves_spiderweb5.mts",
+	rotation = "random",
+})
+
+minetest.register_decoration({
+    deco_type = "schematic",
+    place_on = {"default:stone"},
+    sidelen = 16,
+noise_params = {
+			scale = 0.01,
+			spread = {x = 40, y = 40, z = 40},
+			seed = 1053,
+			octaves = 6,
+			persist = 1,
+		},
+    flags = "place_center_x,place_center_z,all_floors",
+    place_offset_y = -1,
+    biomes = {"coniferous_forest_under", "coniferous_forest", "deciduous_forest_under", "deciduous_forest", "savanna", "savanna_under", "sandstone_desert_under", "rainforest", "rainforest_under", "rainforest_swamp", "rainforest_under", "naturalbiomes:alpine", "naturalbiomes:mediterranean", "naturalbiomes:wetsavanna", "livingjungle:jungle", "livingfloatlands:coldgiantforest", "livingfloatlands:giantforest", "livingfloatlands:paleojungle"},
+    y_max = -5,
+    y_min = -25,
+    schematic = minetest.get_modpath("livingcaves").."/schematics/livingcaves_spiderweb6.mts",
+	rotation = "random",
+})
+
 --- moss cave
 
 	minetest.register_decoration({

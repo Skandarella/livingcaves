@@ -311,5 +311,183 @@ minetest.register_decoration({
 
 })
 
+minetest.register_node("livingcaves:spiderweb", {
+	description = ("Spider Web"),
+	tiles = {"livingcaves_spidernet.png"},
+	drop = "livingcaves:spiderweb",
+        drawtype = "plantlike",
+	liquid_viscosity = 15,
+	liquidtype = "source",
+	liquid_alternative_flowing = "livingcaves:spiderweb",
+	liquid_alternative_source = "livingcaves:spiderweb",
+	liquid_renewable = false,
+	liquid_range = 0,
+	drowning = 0,
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	climbable = false,
+	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
+	sounds = default.node_sound_sand_defaults()
+})
 
+minetest.register_node("livingcaves:spiderweb2", {
+	description = ("Spider Web"),
+	tiles = {"livingcaves_spidernet2.png"},
+	drop = "livingcaves:spiderweb2",
+        drawtype = "plantlike",
+	liquid_viscosity = 15,
+	liquidtype = "source",
+	liquid_alternative_flowing = "livingcaves:spiderweb2",
+	liquid_alternative_source = "livingcaves:spiderweb2",
+	liquid_renewable = false,
+	liquid_range = 0,
+	drowning = 0,
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	climbable = false,
+	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
+	sounds = default.node_sound_sand_defaults()
+})
+
+minetest.register_node("livingcaves:spiderweb3", {
+	description = ("Spider Web"),
+	tiles = {"livingcaves_spidernet3.png"},
+	drop = "livingcaves:spiderweb3",
+        drawtype = "plantlike",
+	liquid_viscosity = 15,
+	liquidtype = "source",
+	liquid_alternative_flowing = "livingcaves:spiderweb3",
+	liquid_alternative_source = "livingcaves:spiderweb3",
+	liquid_renewable = false,
+	liquid_range = 0,
+	drowning = 0,
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	climbable = false,
+	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
+	sounds = default.node_sound_sand_defaults()
+})
+
+minetest.register_node("livingcaves:spiderweb4", {
+	description = ("Spider Web"),
+	tiles = {"livingcaves_spidernet4.png"},
+	drop = "livingcaves:spiderweb4",
+        drawtype = "plantlike",
+	liquid_viscosity = 15,
+	liquidtype = "source",
+	liquid_alternative_flowing = "livingcaves:spiderweb4",
+	liquid_alternative_source = "livingcaves:spiderweb4",
+	liquid_renewable = false,
+	liquid_range = 0,
+	drowning = 0,
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	climbable = false,
+	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
+	sounds = default.node_sound_sand_defaults()
+})
+
+minetest.register_node("livingcaves:spiderweb5", {
+	description = ("Spider Web"),
+	tiles = {"livingcaves_spidernet5.png"},
+	drop = "livingcaves:spiderweb5",
+        drawtype = "plantlike",
+	liquid_viscosity = 15,
+	liquidtype = "source",
+	liquid_alternative_flowing = "livingcaves:spiderweb5",
+	liquid_alternative_source = "livingcaves:spiderweb5",
+	liquid_renewable = false,
+	liquid_range = 0,
+	drowning = 0,
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	climbable = false,
+	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
+	sounds = default.node_sound_sand_defaults()
+})
+
+minetest.register_node("livingcaves:spiderweb6", {
+	description = ("Spider Web"),
+	tiles = {"livingcaves_spidernet6.png"},
+	drop = "livingcaves:spiderweb6",
+        drawtype = "plantlike",
+	liquid_viscosity = 15,
+	liquidtype = "source",
+	liquid_alternative_flowing = "livingcaves:spiderweb6",
+	liquid_alternative_source = "livingcaves:spiderweb6",
+	liquid_renewable = false,
+	liquid_range = 0,
+	drowning = 0,
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	climbable = false,
+	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
+	sounds = default.node_sound_sand_defaults()
+})
+
+minetest.register_node("livingcaves:spiderweb7", {
+	description = ("Spider Web"),
+	tiles = {"livingcaves_spidernet7.png"},
+	drop = "livingcaves:spiderweb7",
+        drawtype = "raillike",
+	liquid_viscosity = 15,
+	liquidtype = "source",
+	liquid_alternative_flowing = "livingcaves:spiderweb7",
+	liquid_alternative_source = "livingcaves:spiderweb7",
+	liquid_renewable = false,
+	liquid_range = 0,
+	drowning = 0,
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	climbable = false,
+	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
+	sounds = default.node_sound_sand_defaults()
+})
+
+minetest.register_node("livingcaves:spiderweb8", {
+	description = ("Spider Web"),
+	tiles = {"livingcaves_spidernet8.png"},
+	drop = "livingcaves:spiderweb8",
+        drawtype = "raillike",
+	liquid_viscosity = 15,
+	liquidtype = "source",
+	liquid_alternative_flowing = "livingcaves:spiderweb8",
+	liquid_alternative_source = "livingcaves:spiderweb8",
+	liquid_renewable = false,
+	liquid_range = 0,
+	drowning = 0,
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	climbable = false,
+	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
+	sounds = default.node_sound_sand_defaults()
+})
+
+minetest.register_node("livingcaves:spiderweb9", {
+	description = ("Spider Web"),
+	tiles = {"livingcaves_spidernet9.png"},
+	drop = "livingcaves:spiderweb9",
+        drawtype = "raillike",
+	liquid_viscosity = 15,
+	liquidtype = "source",
+	liquid_alternative_flowing = "livingcaves:spiderweb9",
+	liquid_alternative_source = "livingcaves:spiderweb9",
+	liquid_renewable = false,
+	liquid_range = 0,
+	drowning = 0,
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	climbable = false,
+	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
+	sounds = default.node_sound_sand_defaults()
+})
 

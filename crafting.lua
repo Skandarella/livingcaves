@@ -371,7 +371,7 @@ minetest.register_craft({
 
 --- mushroom
 
-walls.register(":livingcaves:mossybrick_wall", "Mossy Brick Brick Wall", "livingcaves_mushcave_mossybricks.png",
+walls.register(":livingcaves:mossybrick_wall", "Mossy Brick Wall", "livingcaves_mushcave_mossybricks.png",
 		"livingcaves:mossybrick_wall", default.node_sound_stone_defaults())
 
     stairs.register_stair_and_slab(
@@ -447,4 +447,79 @@ type = "shapeless",
 		{"livingcaves:lichen", "livingcaves:glowshroom_top", "livingcaves:mushroom_edible", "livingcaves:bucket_cavewater"}
 
 	
+})
+
+--- spider web to string
+
+minetest.register_craft({
+	output = "farming:string",
+type = "shapeless",
+	recipe = 
+		{"livingcaves:spiderweb9", "livingcaves:spiderweb9", "livingcaves:spiderweb9", "livingcaves:spiderweb9"}
+
+})
+
+minetest.register_craft({
+	output = "farming:string",
+type = "shapeless",
+	recipe = 
+		{"livingcaves:spiderweb8", "livingcaves:spiderweb8", "livingcaves:spiderweb8", "livingcaves:spiderweb8"}
+
+})
+
+minetest.register_craft({
+	output = "farming:string",
+type = "shapeless",
+	recipe = 
+		{"livingcaves:spiderweb7", "livingcaves:spiderweb7", "livingcaves:spiderweb7", "livingcaves:spiderweb7"}
+
+})
+
+minetest.register_craft({
+	output = "farming:string",
+type = "shapeless",
+	recipe = 
+		{"livingcaves:spiderweb6", "livingcaves:spiderweb6", "livingcaves:spiderweb6", "livingcaves:spiderweb6"}
+
+})
+
+minetest.register_craft({
+	output = "farming:string",
+type = "shapeless",
+	recipe = 
+		{"livingcaves:spiderweb5", "livingcaves:spiderweb5", "livingcaves:spiderweb5", "livingcaves:spiderweb5"}
+
+})
+
+minetest.register_craft({
+	output = "farming:string",
+type = "shapeless",
+	recipe = 
+		{"livingcaves:spiderweb4", "livingcaves:spiderweb4", "livingcaves:spiderweb4", "livingcaves:spiderweb4"}
+
+})
+
+minetest.register_craft({
+	output = "farming:string",
+type = "shapeless",
+	recipe = 
+		{"livingcaves:spiderweb3", "livingcaves:spiderweb3", "livingcaves:spiderweb3", "livingcaves:spiderweb3"}
+
+})
+
+minetest.register_craft({
+	output = "farming:string",
+type = "shapeless",
+	recipe = 
+		{"livingcaves:spiderweb2", "livingcaves:spiderweb2", "livingcaves:spiderweb2", "livingcaves:spiderweb2"}
+
+})
+
+minetest.register_craft({
+	output = "farming:string",
+type = "shapeless",
+	recipe = 
+		{"livingcaves:spiderweb", "livingcaves:spiderweb", "livingcaves:spiderweb", "livingcaves:spiderweb"}
+
+
 })
