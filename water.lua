@@ -1,3 +1,5 @@
+local S = minetest.get_translator("livingcaves")
+
 -- Parameters
 
 -- Node search radius around player

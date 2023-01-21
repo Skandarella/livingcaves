@@ -1,3 +1,5 @@
+local S = minetest.get_translator("livingcaves")
+
 local modname = "livingcaves"
 local modpath = minetest.get_modpath(modname)
 local mg_name = minetest.get_mapgen_setting("mg_name")
@@ -139,7 +141,7 @@ noise_params = {
 	})
 
 minetest.register_node("livingcaves:moss", {
-	    description = "Cave Moss",
+	    description = S"Cave Moss",
 	    drawtype = "plantlike",
 	    waving = 0,
 	    visual_scale = 1.0,
@@ -179,7 +181,7 @@ minetest.register_node("livingcaves:moss", {
 })
 
 minetest.register_node("livingcaves:lichen", {
-	    description = "Cave Lichen",
+	    description = S"Cave Lichen",
 	    drawtype = "plantlike",
 	    waving = 0,
 	    visual_scale = 1.0,
@@ -199,7 +201,7 @@ minetest.register_node("livingcaves:lichen", {
     })
 
 minetest.register_node("livingcaves:hangingmoss", {
-	description = ("Hanging Moss"),
+	description = S("Hanging Moss"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_hangingmoss.png"},
@@ -221,7 +223,7 @@ minetest.register_node("livingcaves:hangingmoss", {
 })
 
 minetest.register_node("livingcaves:hangingmossend", {
-	description = ("Hanging Moss"),
+	description = S("Hanging Moss"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_hangingmoss_top.png"},
@@ -306,7 +308,7 @@ minetest.register_decoration({
 })
 
 minetest.register_node("livingcaves:glowshroom", {
-	description = ("Glowing Mushroom Stem"),
+	description = S("Glowing Mushroom Stem"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_mushroom.png"},
@@ -328,7 +330,7 @@ minetest.register_node("livingcaves:glowshroom", {
 })
 
 minetest.register_node("livingcaves:glowshroom_top", {
-	description = ("Glowing Mushroom Hat"),
+	description = S("Glowing Mushroom Hat"),
 	drawtype = "plantlike",
 	waving = 0,
         light_source = 7,
@@ -379,7 +381,7 @@ minetest.register_decoration({
 --- dripstone cave
 
 minetest.register_node("livingcaves:stalagmitelarge", {
-	description = ("Large Stalagmite"),
+	description = S("Large Stalagmite"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_dripstone.png"},
@@ -401,7 +403,7 @@ minetest.register_node("livingcaves:stalagmitelarge", {
 })
 
 minetest.register_node("livingcaves:stalagmitelargeend", {
-	description = ("Large Stalagmite Spike"),
+	description = S("Large Stalagmite Spike"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_dripstone_top.png"},
@@ -424,7 +426,7 @@ minetest.register_node("livingcaves:stalagmitelargeend", {
 })
 
 minetest.register_node("livingcaves:stalagmite", {
-	description = ("Stalagmite"),
+	description = S("Stalagmite"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_dripstonesmall.png"},
@@ -446,7 +448,7 @@ minetest.register_node("livingcaves:stalagmite", {
 })
 
 minetest.register_node("livingcaves:stalagmiteend", {
-	description = ("Stalagmite Spike"),
+	description = S("Stalagmite Spike"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_dripstonesmall_top.png"},
@@ -469,7 +471,7 @@ minetest.register_node("livingcaves:stalagmiteend", {
 })
 
 minetest.register_node("livingcaves:stalagtite", {
-	description = ("Stalagtite"),
+	description = S("Stalagtite"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_dripstonesmall2.png"},
@@ -491,7 +493,7 @@ minetest.register_node("livingcaves:stalagtite", {
 })
 
 minetest.register_node("livingcaves:stalagtiteend", {
-	description = ("Stalagtite Spike"),
+	description = S("Stalagtite Spike"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_dripstonesmall2_top.png"},
@@ -514,7 +516,7 @@ minetest.register_node("livingcaves:stalagtiteend", {
 })
 
 minetest.register_node("livingcaves:stalagtitelarge", {
-	description = ("Large Stalagtite"),
+	description = S("Large Stalagtite"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_dripstone2.png"},
@@ -536,7 +538,7 @@ minetest.register_node("livingcaves:stalagtitelarge", {
 })
 
 minetest.register_node("livingcaves:stalagtitelargeend", {
-	description = ("Large Stalagtite Spike"),
+	description = S("Large Stalagtite Spike"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_dripstone2_top.png"},
@@ -831,7 +833,7 @@ minetest.register_decoration({
 })
 
 minetest.register_node("livingcaves:water_source", {
-	description = ("Cave Water Source"),
+	description = S("Cave Water Source"),
 	drawtype = "liquid",
 	waving = 3,
         light_source = 7,
@@ -876,7 +878,7 @@ minetest.register_node("livingcaves:water_source", {
 })
 
 minetest.register_node("livingcaves:water_flowing", {
-	description = ("Flowing Cave Water"),
+	description = S("Flowing Cave Water"),
 	drawtype = "flowingliquid",
 	waving = 3,
         light_source = 7,
@@ -1030,7 +1032,7 @@ function bucket_cave.register_liquid(source, flowing, itemname, inventory_image,
 end
 
 minetest.register_craftitem("livingcaves:bucket_empty", {
-	description = "Empty Cave Bucket",
+	description = S"Empty Cave Bucket",
 	inventory_image = "bucket_cave.png",
 	stack_max = 99,
 	liquids_pointable = true,
@@ -1104,7 +1106,7 @@ bucket_cave.register_liquid(
 	"livingcaves:water_flowing",
 	"livingcaves:bucket_cavewater",
 	"bucket_cave_cavewater.png",
-	"Cave Water Bucket",
+	S"Cave Water Bucket",
 	{water_bucket_cave = 1}
 )
 
@@ -1119,7 +1121,7 @@ bucket_cave.register_liquid(
 	"default:water_flowing",
 	"livingcaves:bucket_water",
 	"bucket_cave_water.png",
-	"Water Bucket",
+	S"Water Bucket",
 	{water_bucket_cave = 1}
 )
 
@@ -1128,7 +1130,7 @@ bucket_cave.register_liquid(
 	"default:river_water_flowing",
 	"livingcaves:bucket_river_water",
 	"bucket_cave_river_water.png",
-	"River Water Bucket",
+	S"River Water Bucket",
 	{water_bucket_cave = 1},
 	true
 )
@@ -1175,7 +1177,7 @@ noise_params = {
 })
 
 minetest.register_node("livingcaves:hangingmold", {
-	description = ("Hanging Mold"),
+	description = S("Hanging Mold"),
 	drawtype = "plantlike",
 	waving = 0,
         light_source = 3,
@@ -1198,7 +1200,7 @@ minetest.register_node("livingcaves:hangingmold", {
 })
 
 minetest.register_node("livingcaves:hangingmoldend", {
-	description = ("Hanging Mold"),
+	description = S("Hanging Mold"),
 	drawtype = "plantlike",
 	waving = 0,
         light_source = 3,
@@ -1269,7 +1271,7 @@ minetest.register_decoration({
 	})
 
 minetest.register_node("livingcaves:bacteriacave_mold", {
-	    description = "Bacteria with Mold",
+	    description = S"Bacteria with Mold",
 	    drawtype = "plantlike",
 	    waving = 0,
 	    visual_scale = 1.0,
@@ -1300,7 +1302,7 @@ minetest.register_node("livingcaves:bacteriacave_mold", {
 	})
 
 minetest.register_node("livingcaves:bacteriacave_mold2", {
-	    description = "Bacteria Colony",
+	    description = S"Bacteria Colony",
 	    drawtype = "plantlike",
 	    waving = 0,
 	    visual_scale = 1.0,
@@ -1331,7 +1333,7 @@ minetest.register_decoration({
 	})
 
 minetest.register_node("livingcaves:bacteriacave_mold3", {
-	    description = "Bacteria Colony",
+	    description = S"Bacteria Colony",
 	    drawtype = "plantlike",
 	    waving = 0,
 	    visual_scale = 1.0,
@@ -1351,7 +1353,7 @@ minetest.register_node("livingcaves:bacteriacave_mold3", {
     })
 
 minetest.register_node("livingcaves:mushroom_edible", {
-  description = ("Smelly Mushroom"),
+  description = S("Smelly Mushroom"),
   drawtype = "allfaces_optional",
   waving = 0,
   visual_scale = 1.0,
@@ -1436,7 +1438,7 @@ noise_params = {
 --- rootcave
 
 minetest.register_node("livingcaves:rootcave_hangingroot", {
-	description = ("Hanging Roots"),
+	description = S("Hanging Roots"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_rootcave_hangingroot.png"},
@@ -1458,7 +1460,7 @@ minetest.register_node("livingcaves:rootcave_hangingroot", {
 })
 
 minetest.register_node("livingcaves:rootcave_hangingroot2", {
-	description = ("Hanging Roots"),
+	description = S("Hanging Roots"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_rootcave_hangingroot_top.png"},
@@ -1534,7 +1536,7 @@ minetest.register_decoration({
 	})
 
 minetest.register_node("livingcaves:rootcave_smallroot", {
-	    description = "Small Cave Roots",
+	    description = S"Small Cave Roots",
 	    drawtype = "plantlike",
 	    waving = 0,
 	    visual_scale = 1.0,
@@ -1571,7 +1573,7 @@ minetest.register_node("livingcaves:rootcave_smallroot", {
 	})
 
 minetest.register_node("livingcaves:rootcave_smallroot2", {
-	    description = "Small Cave Roots",
+	    description = S"Small Cave Roots",
 	    drawtype = "plantlike",
 	    waving = 0,
 	    visual_scale = 1.0,
@@ -1603,7 +1605,7 @@ minetest.register_node("livingcaves:rootcave_smallroot2", {
 	})
 
 minetest.register_node("livingcaves:rootcave_bigroot", {
-	    description = "Big Cave Roots",
+	    description = S"Big Cave Roots",
 	    drawtype = "plantlike",
 	    waving = 0,
 	    visual_scale = 1.0,
@@ -1635,7 +1637,7 @@ minetest.register_node("livingcaves:rootcave_bigroot", {
 	})
 
 minetest.register_node("livingcaves:rootcave_bigroot2", {
-	    description = "Big Cave Roots",
+	    description = S"Big Cave Roots",
 	    drawtype = "plantlike",
 	    waving = 0,
 	    visual_scale = 1.0,
@@ -1657,7 +1659,7 @@ minetest.register_node("livingcaves:rootcave_bigroot2", {
 --- ice cave
 
 minetest.register_node("livingcaves:icestalagmitelarge", {
-	description = ("Large Ice Stalagmite"),
+	description = S("Large Ice Stalagmite"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_icecave_icespikelarge.png"},
@@ -1679,7 +1681,7 @@ minetest.register_node("livingcaves:icestalagmitelarge", {
 })
 
 minetest.register_node("livingcaves:icestalagmitelargeend", {
-	description = ("Large Ice Stalagmite Spike"),
+	description = S("Large Ice Stalagmite Spike"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_icecave_icespikelarge_top.png"},
@@ -1702,7 +1704,7 @@ minetest.register_node("livingcaves:icestalagmitelargeend", {
 })
 
 minetest.register_node("livingcaves:icestalagmite", {
-	description = ("Ice Stalagmite"),
+	description = S("Ice Stalagmite"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_icecave_icespike2.png"},
@@ -1724,7 +1726,7 @@ minetest.register_node("livingcaves:icestalagmite", {
 })
 
 minetest.register_node("livingcaves:icestalagmiteend", {
-	description = ("Ice Stalagmite Spike"),
+	description = S("Ice Stalagmite Spike"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_icecave_icespike2_top.png"},
@@ -1747,7 +1749,7 @@ minetest.register_node("livingcaves:icestalagmiteend", {
 })
 
 minetest.register_node("livingcaves:icestalagtite", {
-	description = ("Ice Stalagtite"),
+	description = S("Ice Stalagtite"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_icecave_icespike.png"},
@@ -1769,7 +1771,7 @@ minetest.register_node("livingcaves:icestalagtite", {
 })
 
 minetest.register_node("livingcaves:icestalagtiteend", {
-	description = ("Stalagtite Ice Spike"),
+	description = S("Stalagtite Ice Spike"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_icecave_icespike_top.png"},
@@ -1792,7 +1794,7 @@ minetest.register_node("livingcaves:icestalagtiteend", {
 })
 
 minetest.register_node("livingcaves:icestalagtitelarge", {
-	description = ("Large Ice Stalagtite"),
+	description = S("Large Ice Stalagtite"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_icecave_icespike2large.png"},
@@ -1814,7 +1816,7 @@ minetest.register_node("livingcaves:icestalagtitelarge", {
 })
 
 minetest.register_node("livingcaves:icestalagtitelargeend", {
-	description = ("Large Ice Stalagtite Spike"),
+	description = S("Large Ice Stalagtite Spike"),
 	drawtype = "plantlike",
 	waving = 0,
 	tiles = {"livingcaves_icecave_icespike2large_top.png"},

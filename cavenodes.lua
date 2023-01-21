@@ -1,3 +1,4 @@
+local S = minetest.get_translator("livingcaves")
 
 local modname = "livingcaves"
 local modpath = minetest.get_modpath(modname)
@@ -6,7 +7,7 @@ local mg_name = minetest.get_mapgen_setting("mg_name")
 -- ground nodes
 
 minetest.register_node("livingcaves:mossycaverock", {
-	description = ("Mossy Cave Rock"),
+	description = S("Mossy Cave Rock"),
 	tiles = {"livingcaves_mossycaverock.png"},
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:mossycaverock",
@@ -15,7 +16,7 @@ minetest.register_node("livingcaves:mossycaverock", {
 })
 
 minetest.register_node("livingcaves:lichycaverock", {
-	description = ("Lichen infested Cave Rock"),
+	description = S("Lichen infested Cave Rock"),
 	tiles = {"livingcaves_lichyrock.png"},
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:lichycaverock",
@@ -24,7 +25,7 @@ minetest.register_node("livingcaves:lichycaverock", {
 })
 
 minetest.register_node("livingcaves:mushcave_bottom", {
-	description = ("Mushroom Infested Rock"),
+	description = S("Mushroom Infested Rock"),
 	tiles = {"livingcaves_mushcave_bottom.png"},
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:mushcave_bottom",
@@ -33,7 +34,7 @@ minetest.register_node("livingcaves:mushcave_bottom", {
 })
 
 minetest.register_node("livingcaves:mushcave_bottom2", {
-	description = ("Mushroom Infested Rock"),
+	description = S("Mushroom Infested Rock"),
 	tiles = {"livingcaves_mushcave_bottom2.png"},
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:mushcave_bottom2",
@@ -42,7 +43,7 @@ minetest.register_node("livingcaves:mushcave_bottom2", {
 })
 
 minetest.register_node("livingcaves:dripstonecave_bottom", {
-	description = ("Dripstone Cave Stone"),
+	description = S("Dripstone Cave Stone"),
 	tiles = {"livingcaves_dripstonecave_bottom.png"},
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:dripstonecave_bottom",
@@ -51,7 +52,7 @@ minetest.register_node("livingcaves:dripstonecave_bottom", {
 })
 
 minetest.register_node("livingcaves:dripstonecave_bottom2", {
-	description = ("Dripstone Cave Stone"),
+	description = S("Dripstone Cave Stone"),
 	tiles = {"livingcaves_dripstonecave_bottom2.png"},
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:dripstonecave_bottom2",
@@ -60,7 +61,7 @@ minetest.register_node("livingcaves:dripstonecave_bottom2", {
 })
 
 minetest.register_node("livingcaves:bacteriacave_bottom", {
-	description = ("Backteria Infested Rock"),
+	description = S("Bacteria Infested Rock"),
 	tiles = {"livingcaves_bacteriacave_bottom.png"},
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:bacteriacave_bottom",
@@ -69,7 +70,7 @@ minetest.register_node("livingcaves:bacteriacave_bottom", {
 })
 
 minetest.register_node("livingcaves:bacteriacave_bottom2", {
-	description = ("Backteria Infested Rock"),
+	description = S("Bacteria Infested Rock"),
 	tiles = {"livingcaves_bacteriacave_bottom2.png"},
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:bacteriacave_bottom2",
@@ -79,7 +80,7 @@ minetest.register_node("livingcaves:bacteriacave_bottom2", {
 })
 
 minetest.register_node("livingcaves:rootdirt", {
-	description = ("Dirt With Roots"),
+	description = S("Dirt With Roots"),
 	tiles = {"livingcaves_rootdirt.png"},
 	groups = {crumbly = 3, soil = 1,},
 	drop = "livingcaves:rootdirt",
@@ -88,7 +89,7 @@ minetest.register_node("livingcaves:rootdirt", {
 })
 
 minetest.register_node("livingcaves:rootdirt2", {
-	description = ("Dirt With Roots"),
+	description = S("Dirt With Roots"),
 	tiles = {"livingcaves_rootdirt2.png"},
 	groups = {crumbly = 3, soil = 1,},
 	drop = "livingcaves:rootdirt2",
@@ -97,7 +98,7 @@ minetest.register_node("livingcaves:rootdirt2", {
 })
 
 minetest.register_node("livingcaves:icecave_ice", {
-	description = ("Cave Ice"),
+	description = S("Cave Ice"),
 	tiles = {"livingcaves_icecave_ice.png"},
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
 	drop = "livingcaves:icecave_ice",
@@ -106,7 +107,7 @@ minetest.register_node("livingcaves:icecave_ice", {
 })
 
 minetest.register_node("livingcaves:icecave_ice2", {
-	description = ("Cave Ice"),
+	description = S("Cave Ice"),
 	tiles = {"livingcaves_icecave_ice2.png"},
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
 	drop = "livingcaves:icecave_ice2",
@@ -115,7 +116,7 @@ minetest.register_node("livingcaves:icecave_ice2", {
 })
 
 minetest.register_node("livingcaves:bacteriacave_trapstone", {
-	description = ("Flesh Eating Bacteria Trapstone"),
+	description = S("Flesh Eating Bacteria Trapstone"),
 	tiles = {"livingcaves_bacteriacave_trapstone.png"},
 	groups = {choppy = 3, wood = 1},
 	drop = "livingcaves:bacteriacave_trapstone",
@@ -124,7 +125,7 @@ minetest.register_node("livingcaves:bacteriacave_trapstone", {
 })
 
 minetest.register_node("livingcaves:bacteriacave_trapnode", {
-	description = ("Flesh Eating Bacteria Trap"),
+	description = S("Flesh Eating Bacteria Trap"),
 	tiles = {"livingcaves_bacteriacave_bottom.png"},
 	groups = {choppy = 3, wood = 1},
 	walkable = false,
@@ -134,7 +135,7 @@ minetest.register_node("livingcaves:bacteriacave_trapnode", {
 })
 
 minetest.register_node("livingcaves:bacteriacave_poolstone", {
-	description = ("Bacteria Poolstone"),
+	description = S("Bacteria Poolstone"),
 	tiles = {"livingcaves_bacteriacave_poolstone.png"},
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:bacteriacave_poolstone",
@@ -143,7 +144,7 @@ minetest.register_node("livingcaves:bacteriacave_poolstone", {
 })
 
 minetest.register_node("livingcaves:bacteriacave_nestfoot", {
-	description = ("Bacteria Nest Foot"),
+	description = S("Bacteria Nest Foot"),
 	tiles = {"livingcaves_bacteriacave_nestfoot.png"},
 	groups = {choppy = 3, stone = 1},
 	drop = "livingcaves:bacteriacave_nestfoot",
@@ -152,7 +153,7 @@ minetest.register_node("livingcaves:bacteriacave_nestfoot", {
 })
 
 minetest.register_node("livingcaves:bacteriacave_nest", {
-	description = ("Bacteria Nest Core"),
+	description = S("Bacteria Nest Core"),
 tiles = {
 		{
 			name = "livingcaves_bacteriacave_nest.png",
@@ -312,7 +313,7 @@ minetest.register_decoration({
 })
 
 minetest.register_node("livingcaves:spiderweb", {
-	description = ("Spider Web"),
+	description = S("Spider Web"),
 	tiles = {"livingcaves_spidernet.png"},
 	drop = "livingcaves:spiderweb",
         drawtype = "plantlike",
@@ -332,7 +333,7 @@ minetest.register_node("livingcaves:spiderweb", {
 })
 
 minetest.register_node("livingcaves:spiderweb2", {
-	description = ("Spider Web"),
+	description = S("Spider Web"),
 	tiles = {"livingcaves_spidernet2.png"},
 	drop = "livingcaves:spiderweb2",
         drawtype = "plantlike",
@@ -352,7 +353,7 @@ minetest.register_node("livingcaves:spiderweb2", {
 })
 
 minetest.register_node("livingcaves:spiderweb3", {
-	description = ("Spider Web"),
+	description = S("Spider Web"),
 	tiles = {"livingcaves_spidernet3.png"},
 	drop = "livingcaves:spiderweb3",
         drawtype = "plantlike",
@@ -372,7 +373,7 @@ minetest.register_node("livingcaves:spiderweb3", {
 })
 
 minetest.register_node("livingcaves:spiderweb4", {
-	description = ("Spider Web"),
+	description = S("Spider Web"),
 	tiles = {"livingcaves_spidernet4.png"},
 	drop = "livingcaves:spiderweb4",
         drawtype = "plantlike",
@@ -392,7 +393,7 @@ minetest.register_node("livingcaves:spiderweb4", {
 })
 
 minetest.register_node("livingcaves:spiderweb5", {
-	description = ("Spider Web"),
+	description = S("Spider Web"),
 	tiles = {"livingcaves_spidernet5.png"},
 	drop = "livingcaves:spiderweb5",
         drawtype = "plantlike",
@@ -412,7 +413,7 @@ minetest.register_node("livingcaves:spiderweb5", {
 })
 
 minetest.register_node("livingcaves:spiderweb6", {
-	description = ("Spider Web"),
+	description = S("Spider Web"),
 	tiles = {"livingcaves_spidernet6.png"},
 	drop = "livingcaves:spiderweb6",
         drawtype = "plantlike",
@@ -432,7 +433,7 @@ minetest.register_node("livingcaves:spiderweb6", {
 })
 
 minetest.register_node("livingcaves:spiderweb7", {
-	description = ("Spider Web"),
+	description = S("Spider Web"),
 	tiles = {"livingcaves_spidernet7.png"},
 	drop = "livingcaves:spiderweb7",
         drawtype = "raillike",
@@ -452,7 +453,7 @@ minetest.register_node("livingcaves:spiderweb7", {
 })
 
 minetest.register_node("livingcaves:spiderweb8", {
-	description = ("Spider Web"),
+	description = S("Spider Web"),
 	tiles = {"livingcaves_spidernet8.png"},
 	drop = "livingcaves:spiderweb8",
         drawtype = "raillike",
@@ -472,7 +473,7 @@ minetest.register_node("livingcaves:spiderweb8", {
 })
 
 minetest.register_node("livingcaves:spiderweb9", {
-	description = ("Spider Web"),
+	description = S("Spider Web"),
 	tiles = {"livingcaves_spidernet9.png"},
 	drop = "livingcaves:spiderweb9",
         drawtype = "raillike",
